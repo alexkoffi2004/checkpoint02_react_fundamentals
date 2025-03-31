@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Checkpoint02_react_fundamentals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet React affiche une liste de joueurs de football sous forme de cartes interactives. Chaque carte contient les informations détaillées sur un joueur telles que son nom, son équipe, sa nationalité, son numéro de maillot, son âge et une image de celui-ci.
 
-## Available Scripts
+## Technologies utilisées
 
-In the project directory, you can run:
+- **React** : Pour la création des composants et l'interactivité.
+- **React-Bootstrap** : Pour le design des cartes et les composants de l'interface utilisateur.
+- **JavaScript** : Pour la logique et les interactions.
+- **CSS** : Pour le style de la page.
 
-### `npm start`
+## Prérequis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Avant de commencer, assurez-vous d'avoir installé [Node.js](https://nodejs.org/) et [npm](https://www.npmjs.com/) sur votre machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clonez le repository sur votre machine locale :
+    ```
+    git clone https://github.com/alexkoffi2004/checkpoint02_react_fundamentals.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Accédez au répertoire du projet :
+    ```
+    cd checkpoint02_react_fundamentals
+    ```
 
-### `npm run build`
+3. Installez les dépendances nécessaires :
+    ```
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lancer l'application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Démarrez l'application en local :
+    ```
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Ouvrez votre navigateur à l'adresse suivante : [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+## Structure du projet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- fifa-players-cards/ 
+- ├── public/ 
+- │ └── index.html 
+- ├── src/ 
+- │ ├── App.js # Composant racine de l'application 
+- │ ├── Player.js # Composant pour afficher la carte d'un joueur 
+- │ ├── PlayersList.js # Composant qui liste tous les joueurs 
+- │ ├── players.js # Données des joueurs (tableau d'objets) 
+- │ ├── index.js # Point d'entrée du projet React 
+- │ ├── App.css # Styles de base pour l'application 
+- └── package.json # Dépendances et scripts du projet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Fonctionnalités
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Affichage des informations de chaque joueur sous forme de carte.
+- Utilisation de `react-bootstrap` pour le style des cartes.
+- Mise en page responsive grâce à l'utilisation de `flex` pour afficher les cartes de manière fluide sur tous les écrans.
 
-## Learn More
+## Contribuer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Si vous souhaitez contribuer à ce projet, vous pouvez :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Forker le repository.
+2. Créer une branche pour vos modifications (`git checkout -b feature/amélioration`).
+3. Commiter vos modifications (`git commit -am 'Ajoute une fonctionnalité'`).
+4. Pusher votre branche (`git push origin feature/amélioration`).
+5. Ouvrir une Pull Request.
 
-### Code Splitting
+## Auteurs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Alex Koffi** - *Création initiale* - [https://github.com/alexkoffi2004](https://github.com/alexkoffi2004)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
